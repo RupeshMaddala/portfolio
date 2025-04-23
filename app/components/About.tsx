@@ -93,7 +93,7 @@ const About = () => {
 
   const Achievements = () => {
     const achievements = [
-      "Among Dean's top 10% students at University",
+      "Among Dean&apos;s top 10% students at University",
       "Participated in Smart India Hackathon (SIH 2024)",
       "HackerRank: Secured silver in SQL (4 stars), Gold in Python (5 stars)",
       "LeetCode: Solved more than 200 problems"

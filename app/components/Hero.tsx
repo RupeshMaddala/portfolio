@@ -100,7 +100,7 @@ const Hero = () => {
               </motion.span>
             </motion.h1>
             <motion.p variants={itemVariants}>
-              Computer Science Student & Full-Stack Developer
+              Computer Science Student &amp; Full-Stack Developer
             </motion.p>
             <motion.p className="subtitle" variants={itemVariants}>
               Specializing in AI, Machine Learning, and Cloud Computing
