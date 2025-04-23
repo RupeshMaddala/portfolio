@@ -1,0 +1,122 @@
+.hero {
+  padding: 150px 0 80px;
+  position: relative;
+  background: linear-gradient(to right, #1f1f38 0%, #252554 100%);
+  color: #fff;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-text h1 .animated-name {
+  display: block;
+  font-weight: 700;
+}
+
+.hero-text h1 .animated-name span {
+  display: inline-block;
+  background: linear-gradient(90deg, #6c63ff, #4db5ff, #ff6b6b, #6c63ff);
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-text 8s ease infinite;
+}
+
+.hero-text h1 .space {
+  width: 0.5em;
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-text .subtitle {
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.social-icons a:hover {
+  background: #6c63ff;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.3);
+  border: 5px solid rgba(108, 99, 255, 0.2);
+}
+
+@media screen and (max-width: 992px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .hero-text {
+    padding-right: 0;
+    margin-top: 40px;
+  }
+  
+  .hero-buttons, .social-icons {
+    justify-content: center;
+  }
+} 
