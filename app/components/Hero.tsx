@@ -81,7 +81,7 @@ const Hero = () => {
         >
           <motion.div className="hero-text" variants={containerVariants}>
             <motion.h1 variants={itemVariants}>
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <motion.span 
                 className="animated-name"
                 initial="initial"

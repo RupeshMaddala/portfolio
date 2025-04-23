@@ -126,7 +126,7 @@ const About = () => {
         >
           <div className="about-text">
             <motion.p variants={itemVariants}>
-              I'm a B.Tech Computer Science student at Lovely Professional University, 
+              I&apos;m a B.Tech Computer Science student at Lovely Professional University, 
               specializing in Full-Stack Development, Artificial Intelligence, and Cloud Computing. 
               I focus on building scalable applications and have a solid foundation in both front-end 
               and back-end development.
