@@ -24,26 +24,26 @@ const Projects = () => {
     {
       title: 'ComfyUI-Based AI Image Generation',
       date: 'Jan 2025 - March 2025',
-      description: 'Developed an AI-powered image generation system using ComfyUI and LoRA tuning. Integrated Stable Diffusion XL models with custom VAE and LoRA fine-tuning for enhanced image quality.',
-      image: '/images/proj_pho/Gemini_Generated_Image_qtml05qtml05qtml.jpg',
+      description: 'Developed an AI-powered image generation system using ComfyUI and LoRA tuning. Created photorealistic portraits and artistic compositions with Stable Diffusion XL models, custom VAE and LoRA fine-tuning for stunning image quality and detail.',
+      image: '/images/proj_pho/comfyui_generated.png',
       technologies: ['Python', 'PyTorch', 'ComfyUI', 'SDXL', 'FastAPI'],
-      githubLink: 'https://github.com/RaviKiran752'
+      githubLink: 'https://github.com/RaviKiran752/comfypy'
     },
     {
       title: 'Crop Disease Prediction System',
       date: '2024',
       description: 'A full-stack web application that empowers farmers to detect crop diseases in real-time by uploading images of affected plants. The backend leverages a PyTorch-based CNN with a RESNET architecture to classify diseases with 92% accuracy.',
-      image: '/images/proj_pho/Screenshot From 2025-04-21 18-14-56.png',
+      image: '/images/proj_pho/crop-disease-detection.webp',
       technologies: ['Python', 'PyTorch', 'React', 'Node.js', 'MongoDB'],
       githubLink: 'https://github.com/RaviKiran752'
     },
     {
-      title: 'Algorithmic Trading and Stock Market Prediction',
+      title: 'Deep Learning for Market Prediction',
       date: 'Dec 2023 - April 2024',
       description: 'Designed a deep learning-based trading model to forecast stock market trends using LSTM and RNN architectures. Enhanced prediction accuracy with an attention-based Bi-LSTM model, achieving an R² score of 0.85.',
-      image: '/images/proj_pho/Screenshot From 2025-04-21 18-12-15.png',
+      image: '/images/proj_pho/market-prediction.png',
       technologies: ['Python', 'TensorFlow', 'Keras', 'Pandas', 'NumPy'],
-      githubLink: 'https://github.com/RaviKiran752'
+      githubLink: 'https://github.com/RaviKiran752/Deep-Learning'
     }
   ];
 

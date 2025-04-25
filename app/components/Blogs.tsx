@@ -27,7 +27,7 @@ const Blogs = () => {
       excerpt: "When you type a URL like https://example.com into your browser and hit Enter, it might feel like magic — a web page appears almost instantly...",
       date: "April 11, 2024",
       link: "https://medium.com/@ravi742t7p/what-really-happens-when-you-type-a-url-in-your-browser",
-      image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DTg7LiA_HQsLQ8wLKCWyxQ.jpeg",
+      image: "/images/blog_photos/blog-image-1.png",
       reactions: 5
     },
     {
@@ -35,7 +35,7 @@ const Blogs = () => {
       excerpt: "Imagine a world where artificial intelligence doesn't live inside the walled gardens of tech giants — but instead, exists freely on...",
       date: "April 11, 2024",
       link: "https://medium.com/@ravi742t7p/decentralized-ai-dai-the-next-evolution-of-intelligence",
-      image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4-QWyx7W8jTGXqXiuucfUQ.jpeg",
+      image: "/images/blog_photos/blog-image-2.png",
       reactions: 32,
       comments: 1
     },
@@ -44,7 +44,7 @@ const Blogs = () => {
       excerpt: "Cat World Domination Jokes",
       date: "April 10, 2024",
       link: "https://medium.com/@ravi742t7p/jokes-about-cat-world-domination",
-      image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*rF0nq0xkn-b2WG5FRb9Q2A.jpeg"
+      image: "/images/blog_photos/blog-image-3.png"
     }
   ];
 
@@ -108,7 +108,6 @@ const Blogs = () => {
                   width={400}
                   height={220}
                   style={{ objectFit: 'cover' }}
-                  unoptimized
                 />
               </div>
               <div className="blog-content">

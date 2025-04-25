@@ -78,7 +78,7 @@ const About = () => {
         <motion.h3 variants={itemVariants}>Experience</motion.h3>
         <motion.ul variants={containerVariants}>
           <motion.li variants={itemVariants}>
-            <span className="detail-title">Summer Training Internship</span>
+            <span className="detail-title">Summer Training</span>
             <span className="detail-place">CSE Pathshala</span>
             <span className="detail-year">June 2023 - July 2023</span>
             <span className="detail-description">
@@ -113,6 +113,48 @@ const About = () => {
     );
   };
 
+  // About Me content subsections
+  const BackgroundSubsection = () => {
+    return (
+      <motion.div className="about-subsection" variants={itemVariants}>
+        <motion.h3 variants={itemVariants}>Background</motion.h3>
+        <motion.p variants={itemVariants}>
+          I&apos;m a B.Tech Computer Science student at Lovely Professional University, 
+          specializing in Full-Stack Development, Artificial Intelligence, and Cloud Computing. 
+          I focus on building scalable applications and have a solid foundation in both front-end 
+          and back-end development.
+        </motion.p>
+      </motion.div>
+    );
+  };
+
+  const PassionSubsection = () => {
+    return (
+      <motion.div className="about-subsection" variants={itemVariants}>
+        <motion.h3 variants={itemVariants}>Passion & Interests</motion.h3>
+        <motion.p variants={itemVariants}>
+          My passion lies in developing AI-powered applications and creating innovative solutions 
+          to real-world problems. I am particularly interested in machine learning applications
+          and cloud-native architectures that can scale efficiently.
+        </motion.p>
+      </motion.div>
+    );
+  };
+
+  const GoalsSubsection = () => {
+    return (
+      <motion.div className="about-subsection" variants={itemVariants}>
+        <motion.h3 variants={itemVariants}>Goals & Aspirations</motion.h3>
+        <motion.p variants={itemVariants}>
+          I am committed to continuously improving my skills in emerging technologies.
+          My goal is to contribute to cutting-edge projects that leverage AI to solve
+          complex problems and make a positive impact. I aspire to become a tech leader
+          who bridges the gap between innovative ideas and practical implementations.
+        </motion.p>
+      </motion.div>
+    );
+  };
+
   return (
     <section id="about" className="about" ref={sectionRef}>
       <div className="container">
@@ -125,16 +167,20 @@ const About = () => {
           variants={containerVariants}
         >
           <div className="about-text">
-            <motion.p variants={itemVariants}>
-              I&apos;m a B.Tech Computer Science student at Lovely Professional University, 
-              specializing in Full-Stack Development, Artificial Intelligence, and Cloud Computing. 
-              I focus on building scalable applications and have a solid foundation in both front-end 
-              and back-end development.
-            </motion.p>
-            <motion.p variants={itemVariants}>
-              My passion lies in developing AI-powered applications and creating innovative solutions 
-              to real-world problems. I am committed to continuously improving my skills in emerging technologies.
-            </motion.p>
+            <motion.div 
+              className="about-subsections"
+              variants={containerVariants}
+            >
+              <BackgroundSubsection />
+              <PassionSubsection />
+              <GoalsSubsection />
+            </motion.div>
+            
+            <motion.div className="section-divider" variants={itemVariants}>
+              <div className="divider-line"></div>
+              <h3>Details & Qualifications</h3>
+              <div className="divider-line"></div>
+            </motion.div>
             
             <motion.div 
               className="about-details"
@@ -142,7 +188,6 @@ const About = () => {
             >
               <Education />
               <Experience />
-              <Achievements />
             </motion.div>
           </div>
         </motion.div>

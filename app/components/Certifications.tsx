@@ -12,6 +12,10 @@ interface Certificate {
   issuer: string;
   image: string;
   category: string;
+  score?: string;
+  date?: string;
+  details?: string[];
+  isPdf?: boolean;
 }
 
 const Certifications = () => {
@@ -23,6 +27,20 @@ const Certifications = () => {
 
   // Using the actual certificate images from the correct paths
   const certificatesData: Certificate[] = [
+    {
+      title: 'Cloud Computing',
+      issuer: 'NPTEL - IIT Kharagpur',
+      image: '/images/cert_pho/nptel/cloud-computing-nptel.jpg',
+      category: 'cloud',
+      score: '75%',
+      date: 'Jul-Oct 2024',
+      details: [
+        'Elite certification',
+        'Online Assignments: 23.25/25',
+        'Proctored Exam: 52.11/75',
+        '12-week course'
+      ]
+    },
     {
       title: 'Generative AI with Large Language Models',
       issuer: 'Coursera',
@@ -168,6 +186,12 @@ const Certifications = () => {
             AI & Generative AI
           </button>
           <button 
+            className={`cert-filter-btn ${filter === 'cloud' ? 'active' : ''}`}
+            onClick={() => setFilter('cloud')}
+          >
+            Cloud Computing
+          </button>
+          <button 
             className={`cert-filter-btn ${filter === 'web' ? 'active' : ''}`}
             onClick={() => setFilter('web')}
           >
@@ -189,17 +213,25 @@ const Certifications = () => {
               whileHover={{ y: -5, boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)' }}
               onClick={() => openModal(cert)}
             >
-              <Image 
-                src={cert.image} 
-                alt={cert.title} 
-                width={300} 
-                height={200}
-                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                unoptimized={cert.image.startsWith('http')}
-              />
+              {cert.isPdf ? (
+                <div className="pdf-placeholder">
+                  <div className="pdf-icon">PDF</div>
+                  <div className="pdf-title">{cert.title}</div>
+                </div>
+              ) : (
+                <Image 
+                  src={cert.image} 
+                  alt={cert.title} 
+                  width={300} 
+                  height={200}
+                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                  unoptimized={cert.image.startsWith('http')}
+                />
+              )}
               <div className="cert-overlay">
                 <h3>{cert.title}</h3>
                 <p>{cert.issuer}</p>
+                {cert.isPdf && <span className="pdf-badge">PDF</span>}
               </div>
             </motion.div>
           ))}
@@ -253,21 +285,52 @@ const Certifications = () => {
                 >
                   &times;
                 </motion.span>
-                <Image 
-                  src={selectedCert.image} 
-                  alt={selectedCert.title} 
-                  width={800} 
-                  height={600}
-                  style={{ 
-                    objectFit: 'contain', 
-                    maxWidth: '100%',
-                    maxHeight: '80vh'
-                  }}
-                  unoptimized={selectedCert.image.startsWith('http')}
-                />
+                
+                {selectedCert.isPdf ? (
+                  <div className="pdf-preview">
+                    <div className="pdf-placeholder large">
+                      <div className="pdf-icon">PDF</div>
+                      <div className="pdf-title">{selectedCert.title}</div>
+                    </div>
+                    <a 
+                      href={selectedCert.image} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="pdf-view-btn"
+                    >
+                      View PDF Certificate
+                    </a>
+                  </div>
+                ) : (
+                  <Image 
+                    src={selectedCert.image} 
+                    alt={selectedCert.title} 
+                    width={800} 
+                    height={600}
+                    style={{ 
+                      objectFit: 'contain', 
+                      maxWidth: '100%',
+                      maxHeight: '80vh'
+                    }}
+                    unoptimized={selectedCert.image.startsWith('http')}
+                  />
+                )}
+                
                 <div className="cert-modal-info">
                   <h3>{selectedCert.title}</h3>
                   <p>Issued by: {selectedCert.issuer}</p>
+                  {selectedCert.date && <p className="cert-date">Completed: {selectedCert.date}</p>}
+                  {selectedCert.score && <p className="cert-score">Score: {selectedCert.score}</p>}
+                  
+                  {selectedCert.details && selectedCert.details.length > 0 && (
+                    <div className="cert-details">
+                      <ul>
+                        {selectedCert.details.map((detail, index) => (
+                          <li key={index}>{detail}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </motion.div>
             </motion.div>
