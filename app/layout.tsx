@@ -16,15 +16,15 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ravi Kiran Pandi - Portfolio",
-  description: "Personal portfolio website of Ravi Kiran Pandi, showcasing skills in Full-Stack Development, AI, and Cloud Computing",
+  title: "Rupesh Maddala - Portfolio",
+  description: "Personal portfolio website of Rupesh Maddala, showcasing skills in cybersecurity, networking, and information security",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <head>

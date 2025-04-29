@@ -63,7 +63,7 @@ const letterVariants = {
 };
 
 const Hero = () => {
-  const nameText = "Ravi Kiran";
+  const nameText = "Rupesh Maddala";
   const [letters, setLetters] = useState<string[]>([]);
 
   useEffect(() => {
@@ -100,24 +100,24 @@ const Hero = () => {
               </motion.span>
             </motion.h1>
             <motion.p variants={itemVariants}>
-              Computer Science Student &amp; Full-Stack Developer
+              Computer Science Student &amp; Cybersecurity Enthusiast
             </motion.p>
             <motion.p className="subtitle" variants={itemVariants}>
-              Specializing in AI, Machine Learning, and Cloud Computing
+              Specializing in Network Security, Digital Forensics, and Ethical Hacking
             </motion.p>
             
             <motion.div className="hero-buttons" variants={itemVariants}>
               <Link href="#contact" className="btn btn-primary">
                 Get In Touch
               </Link>
-              <Link href="/Resume_Ravi.pdf" target="_blank" className="btn btn-secondary">
+              <Link href="/Resume_Rupesh.pdf" target="_blank" className="btn btn-secondary">
                 Download CV
               </Link>
             </motion.div>
             
             <motion.div className="social-icons" variants={itemVariants}>
               <motion.a 
-                href="https://www.linkedin.com/in/ravi-kiran" 
+                href="https://www.linkedin.com/in/maddala-esh" 
                 target="_blank"
                 whileHover={{ y: -5, color: "#6c63ff", backgroundColor: "#fff" }}
                 transition={{ type: "spring", stiffness: 500 }}
@@ -125,20 +125,12 @@ const Hero = () => {
                 <i className="fab fa-linkedin"></i>
               </motion.a>
               <motion.a 
-                href="https://github.com/RaviKiran752" 
+                href="https://github.com/RupeshMaddala" 
                 target="_blank"
                 whileHover={{ y: -5, color: "#6c63ff", backgroundColor: "#fff" }}
                 transition={{ type: "spring", stiffness: 500 }}
               >
                 <i className="fab fa-github"></i>
-              </motion.a>
-              <motion.a 
-                href="https://medium.com/@ravi742t7p" 
-                target="_blank"
-                whileHover={{ y: -5, color: "#6c63ff", backgroundColor: "#fff" }}
-                transition={{ type: "spring", stiffness: 500 }}
-              >
-                <i className="fab fa-medium"></i>
               </motion.a>
             </motion.div>
           </motion.div>
@@ -149,7 +141,7 @@ const Hero = () => {
           >
             <Image 
               src="/images/prof_pho/prof.jpeg" 
-              alt="Ravi Kiran" 
+              alt="Rupesh Maddala" 
               width={400} 
               height={400}
               priority

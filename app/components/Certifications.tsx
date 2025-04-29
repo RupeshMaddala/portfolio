@@ -28,6 +28,27 @@ const Certifications = () => {
   // Using the actual certificate images from the correct paths
   const certificatesData: Certificate[] = [
     {
+      title: 'Introduction to Cybersecurity Tools & Cyber Attacks',
+      issuer: 'IBM',
+      image: '/images/cert_pho/cybersecurity-ibm.png',
+      category: 'security',
+      date: 'Dec 2024'
+    },
+    {
+      title: 'Digital Forensics Essentials (DFE)',
+      issuer: 'EC-Council',
+      image: '/images/cert_pho/digital-forensics.png',
+      category: 'security',
+      date: 'Mar 2024'
+    },
+    {
+      title: 'Fundamentals of Management',
+      issuer: 'Coursera',
+      image: '/images/cert_pho/management.png',
+      category: 'management',
+      date: 'Nov 2023'
+    },
+    {
       title: 'Cloud Computing',
       issuer: 'NPTEL - IIT Kharagpur',
       image: '/images/cert_pho/nptel/cloud-computing-nptel.jpg',
@@ -40,54 +61,6 @@ const Certifications = () => {
         'Proctored Exam: 52.11/75',
         '12-week course'
       ]
-    },
-    {
-      title: 'Generative AI with Large Language Models',
-      issuer: 'Coursera',
-      image: '/images/cert_pho/genAI with llms.png',
-      category: 'ai'
-    },
-    {
-      title: 'Generative AI for Everyone',
-      issuer: 'Coursera',
-      image: '/images/cert_pho/gen_AI for everyone.png',
-      category: 'ai'
-    },
-    {
-      title: 'Introduction to Generative AI',
-      issuer: 'Coursera',
-      image: '/images/cert_pho/introduction to generative ai.png',
-      category: 'ai'
-    },
-    {
-      title: 'Introduction to Large Language Models',
-      issuer: 'Coursera',
-      image: '/images/cert_pho/introduction to llms.png',
-      category: 'ai'
-    },
-    {
-      title: 'Build AI Apps with ChatGPT',
-      issuer: 'Coursera',
-      image: '/images/cert_pho/build ai apps with chatgpt.png',
-      category: 'ai'
-    },
-    {
-      title: 'ChatGPT for Beginners',
-      issuer: 'Coursera',
-      image: '/images/cert_pho/chatgpt for beginners.png',
-      category: 'ai'
-    },
-    {
-      title: 'Generative AI Primer',
-      issuer: 'Coursera',
-      image: '/images/cert_pho/generative ai primer.png',
-      category: 'ai'
-    },
-    {
-      title: 'Full Stack Web Development',
-      issuer: 'CSE Pathshala',
-      image: '/images/summer_training/WhatsApp Image 2025-04-21 at 09.57.00.jpeg',
-      category: 'web'
     }
   ];
 
@@ -180,22 +153,22 @@ const Certifications = () => {
             All
           </button>
           <button 
-            className={`cert-filter-btn ${filter === 'ai' ? 'active' : ''}`}
-            onClick={() => setFilter('ai')}
+            className={`cert-filter-btn ${filter === 'security' ? 'active' : ''}`}
+            onClick={() => setFilter('security')}
           >
-            AI & Generative AI
+            Cybersecurity
           </button>
           <button 
-            className={`cert-filter-btn ${filter === 'cloud' ? 'active' : ''}`}
-            onClick={() => setFilter('cloud')}
+            className={`cert-filter-btn ${filter === 'networking' ? 'active' : ''}`}
+            onClick={() => setFilter('networking')}
           >
-            Cloud Computing
+            Networking
           </button>
           <button 
-            className={`cert-filter-btn ${filter === 'web' ? 'active' : ''}`}
-            onClick={() => setFilter('web')}
+            className={`cert-filter-btn ${filter === 'forensics' ? 'active' : ''}`}
+            onClick={() => setFilter('forensics')}
           >
-            Web Development
+            Digital Forensics
           </button>
         </motion.div>
         

@@ -38,20 +38,20 @@ const About = () => {
       {
         title: 'Bachelor of Technology',
         place: 'Lovely Professional University, Punjab',
-        year: '2022-2026',
-        description: 'Computer Science and Engineering - CGPA: 7.50'
+        year: '2022-Present',
+        description: 'Computer Science and Engineering'
       },
       {
-        title: 'Intermediate (12th)',
-        place: 'Sri Chaitanya Junior College, Visakhapatnam',
-        year: '2019-2021',
-        description: 'Science - Percentage: 93.3%'
+        title: 'Intermediate',
+        place: 'Gravity Junior College, Visakhapatnam',
+        year: '2020-2022',
+        description: 'Science'
       },
       {
-        title: 'High School (10th)',
-        place: 'Jawahar Navodaya Vidyalaya, Srikakulam',
-        year: '2018-2019',
-        description: 'Science - Percentage: 88.6%'
+        title: 'High School',
+        place: 'Bhashyam High School, Visakhapatnam',
+        year: '2019-2020',
+        description: 'Science'
       }
     ];
 
@@ -78,12 +78,19 @@ const About = () => {
         <motion.h3 variants={itemVariants}>Experience</motion.h3>
         <motion.ul variants={containerVariants}>
           <motion.li variants={itemVariants}>
-            <span className="detail-title">Summer Training</span>
-            <span className="detail-place">CSE Pathshala</span>
-            <span className="detail-year">June 2023 - July 2023</span>
+            <span className="detail-title">Data Structures & Algorithms Training</span>
+            <span className="detail-place">Chiper Schools</span>
+            <span className="detail-year">March 2024 - July 2024</span>
             <span className="detail-description">
-              Built an E-Commerce platform using MERN stack with features like user authentication, 
-              product management, and order processing.
+              Learned Data Structures and Algorithms using C++ and C. Gained hands-on experience in solving real-world problems using core data structures and advanced algorithmic techniques.
+            </span>
+          </motion.li>
+          <motion.li variants={itemVariants}>
+            <span className="detail-title">Cybersecurity Training</span>
+            <span className="detail-place">IBM & EC-Council</span>
+            <span className="detail-year">2023 - 2024</span>
+            <span className="detail-description">
+              Completed comprehensive cybersecurity training programs covering network security, digital forensics, and ethical hacking. Gained practical experience in identifying vulnerabilities and implementing security measures.
             </span>
           </motion.li>
         </motion.ul>
@@ -120,9 +127,9 @@ const About = () => {
         <motion.h3 variants={itemVariants}>Background</motion.h3>
         <motion.p variants={itemVariants}>
           I&apos;m a B.Tech Computer Science student at Lovely Professional University, 
-          specializing in Full-Stack Development, Artificial Intelligence, and Cloud Computing. 
-          I focus on building scalable applications and have a solid foundation in both front-end 
-          and back-end development.
+          specializing in Cybersecurity, Network Security, and Digital Forensics. 
+          I focus on understanding security vulnerabilities and implementing robust 
+          security measures to protect systems and networks.
         </motion.p>
       </motion.div>
     );
@@ -133,9 +140,9 @@ const About = () => {
       <motion.div className="about-subsection" variants={itemVariants}>
         <motion.h3 variants={itemVariants}>Passion & Interests</motion.h3>
         <motion.p variants={itemVariants}>
-          My passion lies in developing AI-powered applications and creating innovative solutions 
-          to real-world problems. I am particularly interested in machine learning applications
-          and cloud-native architectures that can scale efficiently.
+          My passion lies in cybersecurity and protecting digital assets. I am particularly interested in 
+          network security, ethical hacking, and digital forensics. I enjoy analyzing security systems,
+          identifying vulnerabilities, and developing solutions to enhance security measures.
         </motion.p>
       </motion.div>
     );
@@ -146,10 +153,10 @@ const About = () => {
       <motion.div className="about-subsection" variants={itemVariants}>
         <motion.h3 variants={itemVariants}>Goals & Aspirations</motion.h3>
         <motion.p variants={itemVariants}>
-          I am committed to continuously improving my skills in emerging technologies.
-          My goal is to contribute to cutting-edge projects that leverage AI to solve
-          complex problems and make a positive impact. I aspire to become a tech leader
-          who bridges the gap between innovative ideas and practical implementations.
+          I am committed to continuously improving my skills in cybersecurity and information security.
+          My goal is to contribute to making the digital world safer by identifying and mitigating
+          security threats. I aspire to become a cybersecurity expert who can protect organizations
+          from evolving cyber threats and help build secure systems.
         </motion.p>
       </motion.div>
     );

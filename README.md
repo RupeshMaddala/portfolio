@@ -1,4 +1,4 @@
-# Ravi Kiran - Portfolio
+# Rupesh Maddala - Portfolio
 
 A modern, responsive portfolio website built with Next.js and React to showcase my skills, projects, and experience.
 
@@ -6,7 +6,6 @@ A modern, responsive portfolio website built with Next.js and React to showcase 
 
 - Responsive design that works on all devices
 - Animated UI elements using Framer Motion
-- Dynamic blog section connected to Medium
 - Interactive project showcase
 - Contact form for easy communication
 - Skills and certification sections
@@ -25,12 +24,12 @@ A modern, responsive portfolio website built with Next.js and React to showcase 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/RaviKiran752/Ravi-Portfolio.git
+   git clone https://github.com/RupeshMaddala/Rupesh-Portfolio.git
    ```
 
 2. Install dependencies:
    ```bash
-   cd Ravi-Portfolio
+   cd Rupesh-Portfolio
    npm install
    ```
 
@@ -42,7 +41,6 @@ A modern, responsive portfolio website built with Next.js and React to showcase 
 ## Contact
 
 Feel free to reach out to me:
-- Email: ravi742t7p@gmail.com
-- LinkedIn: https://www.linkedin.com/in/ravi-kiran
-- GitHub: https://github.com/RaviKiran752
-- Medium: https://medium.com/@ravi742t7p
+- Email: maddalarupeshrupesh@gmail.com
+- LinkedIn: https://www.linkedin.com/in/maddala-esh
+- GitHub: https://github.com/RupeshMaddala

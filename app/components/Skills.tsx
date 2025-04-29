@@ -23,32 +23,31 @@ const Skills = () => {
     {
       title: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 'advanced' },
-        { name: 'JavaScript', level: 'advanced' },
-        { name: 'Java', level: 'intermediate' },
         { name: 'C++', level: 'intermediate' },
-        { name: 'HTML5/CSS3', level: 'advanced' }
-      ]
-    },
-    {
-      title: 'Frameworks & Libraries',
-      skills: [
-        { name: 'Node.js', level: 'advanced' },
-        { name: 'React.js', level: 'intermediate' },
-        { name: 'Express.js', level: 'intermediate' },
-        { name: 'Next.js', level: 'intermediate' },
-        { name: 'PyTorch', level: 'advanced' },
-        { name: 'TensorFlow', level: 'intermediate' }
+        { name: 'C', level: 'intermediate' },
+        { name: 'Python', level: 'intermediate' },
+        { name: 'HTML', level: 'intermediate' },
+        { name: 'CSS', level: 'intermediate' }
       ]
     },
     {
       title: 'Tools & Technologies',
       skills: [
-        { name: 'MongoDB', level: 'intermediate' },
-        { name: 'MySQL', level: 'intermediate' },
-        { name: 'AWS', level: 'intermediate' },
-        { name: 'Docker', level: 'intermediate' },
-        { name: 'Git', level: 'intermediate' }
+        { name: 'Wireshark', level: 'intermediate' },
+        { name: 'Unity', level: 'intermediate' },
+        { name: 'Blender', level: 'intermediate' },
+        { name: 'Metasploit', level: 'intermediate' },
+        { name: 'Linux', level: 'intermediate' }
+      ]
+    },
+    {
+      title: 'Soft Skills',
+      skills: [
+        { name: 'Problem Solving', level: 'intermediate' },
+        { name: 'Adaptability', level: 'intermediate' },
+        { name: 'Communication', level: 'intermediate' },
+        { name: 'Time Management', level: 'intermediate' },
+        { name: 'Quick Learning', level: 'intermediate' }
       ]
     }
   ];

@@ -22,20 +22,20 @@ const Projects = () => {
 
   const projectsData: Project[] = [
     {
-      title: 'ComfyUI-Based AI Image Generation',
-      date: 'Jan 2025 - March 2025',
-      description: 'Developed an AI-powered image generation system using ComfyUI and LoRA tuning. Created photorealistic portraits and artistic compositions with Stable Diffusion XL models, custom VAE and LoRA fine-tuning for stunning image quality and detail.',
-      image: '/images/proj_pho/comfyui_generated.png',
-      technologies: ['Python', 'PyTorch', 'ComfyUI', 'SDXL', 'FastAPI'],
-      githubLink: 'https://github.com/RaviKiran752/comfypy'
+      title: 'Booking Management System',
+      date: 'Jan 2024 - Mar 2024',
+      description: 'Developed a responsive Booking Management System using HTML, CSS, and JavaScript, ensuring a user experience across all devices. Designed a user-friendly booking form featuring input fields, date selection, and service options.',
+      image: '/images/proj_pho/booking-system.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/RupeshMaddala'
     },
     {
-      title: 'Crop Disease Prediction System',
-      date: '2024',
-      description: 'A full-stack web application that empowers farmers to detect crop diseases in real-time by uploading images of affected plants. The backend leverages a PyTorch-based CNN with a RESNET architecture to classify diseases with 92% accuracy.',
-      image: '/images/proj_pho/crop-disease-detection.webp',
-      technologies: ['Python', 'PyTorch', 'React', 'Node.js', 'MongoDB'],
-      githubLink: 'https://github.com/RaviKiran752'
+      title: 'Plant Disease Prediction System',
+      date: 'Apr 2023 - Sep 2023',
+      description: 'Developed a Plant Disease Prediction System leveraging PyTorch to train and deploy deep learning models for accurate plant disease classification. Trained a conventional neural network (CNN) on large plant disease datasets.',
+      image: '/images/proj_pho/plant-disease.png',
+      technologies: ['Python', 'PyTorch', 'React'],
+      githubLink: 'https://github.com/RupeshMaddala'
     },
     {
       title: 'Deep Learning for Market Prediction',

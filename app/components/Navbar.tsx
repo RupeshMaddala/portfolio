@@ -70,7 +70,7 @@ const Navbar = () => {
           className="logo"
           variants={linkVariants}
         >
-          <h2>Ravi<span>Kiran</span></h2>
+          <h2>Rupesh<span>Maddala</span></h2>
         </motion.div>
         
         <motion.div 
