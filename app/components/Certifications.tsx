@@ -16,6 +16,7 @@ interface Certificate {
   date?: string;
   details?: string[];
   isPdf?: boolean;
+  pdfUrl?: string;
 }
 
 const Certifications = () => {
@@ -30,37 +31,83 @@ const Certifications = () => {
     {
       title: 'Introduction to Cybersecurity Tools & Cyber Attacks',
       issuer: 'IBM',
-      image: '/images/cert_pho/cybersecurity-ibm.png',
+      image: '/images/cert_pho/IBM-cybersecurity.jpeg',
       category: 'security',
-      date: 'Dec 2024'
+      date: 'Dec 2024',
+      isPdf: true,
+      pdfUrl: '/certificates/IBM Intro to cyber security.pdf'
     },
     {
       title: 'Programming Essentials',
       issuer: 'EC-Council',
-      image: '/images/cert_pho/programming.png',
+      image: '/images/cert_pho/EC-DFE.jpeg',
       category: 'programming',
-      date: 'Mar 2024'
+      date: 'Mar 2024',
+      isPdf: true,
+      pdfUrl: '/certificates/EC-Council DFE.pdf'
     },
     {
-      title: 'Fundamentals of Management',
-      issuer: 'Coursera',
-      image: '/images/cert_pho/management.png',
-      category: 'management',
-      date: 'Nov 2023'
-    },
-    {
-      title: 'Cloud Computing',
+      title: 'Network Security & Administration',
       issuer: 'NPTEL - IIT Kharagpur',
-      image: '/images/cert_pho/nptel/cloud-computing-nptel.jpg',
-      category: 'cloud',
-      score: '75%',
+      image: '/images/cert_pho/networking.jpeg',
+      category: 'networking',
       date: 'Jul-Oct 2024',
-      details: [
-        'Elite certification',
-        'Online Assignments: 23.25/25',
-        'Proctored Exam: 52.11/75',
-        '12-week course'
-      ]
+      isPdf: true,
+      pdfUrl: '/certificates/bits and bytes.pdf'
+    },
+    {
+      title: 'Digital Forensics Essentials (DFE)',
+      issuer: 'EC-Council',
+      image: '/images/cert_pho/EC-DFE.jpeg',
+      category: 'security',
+      date: 'Mar 2024',
+      isPdf: true,
+      pdfUrl: '/certificates/EC-Council DFE.pdf'
+    },
+    {
+      title: 'Ethical Hacking Essentials (EHE)',
+      issuer: 'EC-Council',
+      image: '/images/cert_pho/EC-EHE.jpeg',
+      category: 'security',
+      date: 'Apr 2024',
+      isPdf: true,
+      pdfUrl: '/certificates/EC-Council EHE.pdf'
+    },
+    {
+      title: 'C++ Programming',
+      issuer: 'Programming Hub',
+      image: '/images/cert_pho/cpp.jpeg',
+      category: 'programming',
+      date: 'Jan 2024',
+      isPdf: true,
+      pdfUrl: '/certificates/C++.pdf'
+    },
+    {
+      title: 'Data Structures & Algorithms',
+      issuer: 'Programming Hub',
+      image: '/images/cert_pho/dsa.jpeg',
+      category: 'programming',
+      date: 'Feb 2024',
+      isPdf: true,
+      pdfUrl: '/certificates/DSA.pdf'
+    },
+    {
+      title: 'Bits and Bytes of Computer Networking',
+      issuer: 'Google',
+      image: '/images/cert_pho/networking-bits.jpeg',
+      category: 'networking',
+      date: 'Jan 2024',
+      isPdf: true,
+      pdfUrl: '/certificates/bits and bytes.pdf'
+    },
+    {
+      title: 'Introduction to Cybersecurity',
+      issuer: 'Cybrary',
+      image: '/images/cert_pho/cybrary.jpeg',
+      category: 'security',
+      date: 'Feb 2024',
+      isPdf: true,
+      pdfUrl: '/certificates/Cybrary.pdf'
     }
   ];
 
@@ -165,10 +212,10 @@ const Certifications = () => {
             Programming
           </button>
           <button 
-            className={`cert-filter-btn ${filter === 'cloud' ? 'active' : ''}`}
-            onClick={() => setFilter('cloud')}
+            className={`cert-filter-btn ${filter === 'networking' ? 'active' : ''}`}
+            onClick={() => setFilter('networking')}
           >
-            Cloud Computing
+            Networking
           </button>
         </motion.div>
         
@@ -266,7 +313,7 @@ const Certifications = () => {
                       <div className="pdf-title">{selectedCert.title}</div>
                     </div>
                     <a 
-                      href={selectedCert.image} 
+                      href={selectedCert.pdfUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="pdf-view-btn"
