@@ -87,35 +87,31 @@ const Contact = () => {
     {
       icon: 'fa-envelope',
       title: 'Email',
-      content: 'ravi742t7p@gmail.com',
-      link: 'mailto:ravi742t7p@gmail.com'
+      content: 'maddalarupeshrupesh@gmail.com',
+      link: 'mailto:maddalarupeshrupesh@gmail.com'
     },
     {
       icon: 'fa-phone',
       title: 'Phone',
-      content: '+91 9347280958',
-      link: 'tel:+919347280958'
+      content: '+91 9550740301',
+      link: 'tel:+919550740301'
     },
     {
       icon: 'fa-map-marker-alt',
       title: 'Location',
       content: 'Visakhapatnam, Andhra Pradesh, India',
-      link: null
+      link: 'https://maps.google.com/?q=Visakhapatnam,Andhra+Pradesh'
     }
   ];
   
   const socialLinks = [
     {
       icon: 'fa-linkedin',
-      link: 'https://www.linkedin.com/in/ravi-kiran'
+      link: 'https://www.linkedin.com/in/maddala-rupesh-436b9a254/'
     },
     {
       icon: 'fa-github',
-      link: 'https://github.com/RaviKiran752'
-    },
-    {
-      icon: 'fa-medium',
-      link: 'https://medium.com/@ravi742t7p'
+      link: 'https://github.com/RupeshMaddala'
     }
   ];
 

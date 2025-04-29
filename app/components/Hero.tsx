@@ -117,7 +117,7 @@ const Hero = () => {
             
             <motion.div className="social-icons" variants={itemVariants}>
               <motion.a 
-                href="https://www.linkedin.com/in/maddala-esh" 
+                href="https://www.linkedin.com/in/maddala-rupesh-436b9a254/" 
                 target="_blank"
                 whileHover={{ y: -5, color: "#6c63ff", backgroundColor: "#fff" }}
                 transition={{ type: "spring", stiffness: 500 }}

@@ -24,23 +24,23 @@ const Projects = () => {
     {
       title: 'Booking Management System',
       date: 'Jan 2024 - Mar 2024',
-      description: 'Developed a responsive Booking Management System using HTML, CSS, and JavaScript, ensuring a user experience across all devices. Designed a user-friendly booking form featuring input fields, date selection, and service options.',
-      image: '/images/proj_pho/booking-system.png',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
+      description: 'Developed a responsive Booking Management System using HTML, CSS, and JavaScript. Features include user authentication, booking form with date selection, service options, and admin dashboard for managing bookings.',
+      image: '/images/proj_pho/plant-disease.png',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'MongoDB'],
       githubLink: 'https://github.com/RupeshMaddala'
     },
     {
       title: 'Plant Disease Prediction System',
       date: 'Apr 2023 - Sep 2023',
-      description: 'Developed a Plant Disease Prediction System leveraging PyTorch to train and deploy deep learning models for accurate plant disease classification. Trained a conventional neural network (CNN) on large plant disease datasets.',
-      image: '/images/proj_pho/plant-disease.png',
-      technologies: ['Python', 'PyTorch', 'React'],
+      description: 'Built an AI-powered Plant Disease Prediction System using PyTorch and React. The system can identify plant diseases from uploaded images with high accuracy. Features include real-time prediction, disease information, and treatment recommendations.',
+      image: '/images/proj_pho/booking-system.png',
+      technologies: ['Python', 'PyTorch', 'React', 'Node.js', 'MongoDB'],
       githubLink: 'https://github.com/RupeshMaddala'
     },
     {
       title: 'Deep Learning for Market Prediction',
       date: 'Dec 2023 - April 2024',
-      description: 'Designed a deep learning-based trading model to forecast stock market trends using LSTM and RNN architectures. Enhanced prediction accuracy with an attention-based Bi-LSTM model, achieving an R² score of 0.85.',
+      description: 'Developed a deep learning model for stock market trend prediction using LSTM and RNN architectures. The model analyzes historical data and market indicators to forecast trends with high accuracy.',
       image: '/images/proj_pho/market-prediction.png',
       technologies: ['Python', 'TensorFlow', 'Keras', 'Pandas', 'NumPy'],
       githubLink: 'https://github.com/RaviKiran752/Deep-Learning'
