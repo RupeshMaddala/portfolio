@@ -17,7 +17,7 @@ const Footer = () => {
   ];
   
   const socialLinks = [
-    { icon: 'fa-linkedin', link: 'https://www.linkedin.com/in/maddala-esh' },
+    { icon: 'fa-linkedin', link: 'https://www.linkedin.com/in/maddala-rupesh-436b9a254/' },
     { icon: 'fa-github', link: 'https://github.com/RupeshMaddala' }
   ];
 
