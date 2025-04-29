@@ -35,10 +35,10 @@ const Certifications = () => {
       date: 'Dec 2024'
     },
     {
-      title: 'Digital Forensics Essentials (DFE)',
+      title: 'Programming Essentials',
       issuer: 'EC-Council',
-      image: '/images/cert_pho/digital-forensics.png',
-      category: 'security',
+      image: '/images/cert_pho/programming.png',
+      category: 'programming',
       date: 'Mar 2024'
     },
     {
@@ -159,16 +159,16 @@ const Certifications = () => {
             Cybersecurity
           </button>
           <button 
-            className={`cert-filter-btn ${filter === 'networking' ? 'active' : ''}`}
-            onClick={() => setFilter('networking')}
+            className={`cert-filter-btn ${filter === 'programming' ? 'active' : ''}`}
+            onClick={() => setFilter('programming')}
           >
-            Networking
+            Programming
           </button>
           <button 
-            className={`cert-filter-btn ${filter === 'forensics' ? 'active' : ''}`}
-            onClick={() => setFilter('forensics')}
+            className={`cert-filter-btn ${filter === 'cloud' ? 'active' : ''}`}
+            onClick={() => setFilter('cloud')}
           >
-            Digital Forensics
+            Cloud Computing
           </button>
         </motion.div>
         
